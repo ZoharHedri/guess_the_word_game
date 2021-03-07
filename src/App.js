@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import IntroPage from './GuessGame/IntroPage';
+import GamePlay from './GuessGame/GamePlay';
+import GameOver from './GuessGame/GameOver';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ textAlign: 'center' }}>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={IntroPage} />
+          <Route exact path="/play" component={GamePlay} />
+          <Route exact path="/gameover" component={GameOver} />
+        </Switch>
+      </Router>
+
     </div>
   );
 }
