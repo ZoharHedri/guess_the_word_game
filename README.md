@@ -1,3 +1,9 @@
+# Guess The Word Game - in React
+using:
+1. react-router-dom
+2. @material-ui/core
+3. React Hook
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
