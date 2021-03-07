@@ -2,7 +2,7 @@
 using:
 1. react-router-dom
 2. @material-ui/core
-3. React Hook
+3. React Hooks
 
 # Getting Started with Create React App
 
